@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang=eng>
+<head>
+    <meta charset="UTF-8">
+    <title>Job application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Job application</h1>
+    <div class="container">       
+       <div class="form">
+           <form action="done.html">   
+            <div>
+                <label for="fname_input">First Name</label><br>
+                <input type="text" placeholder="Enter your first name" id="fname_input" class="input-style" name="fname" required>
+            </div><br>
+            <div>
+                <label for="lname_input">Last Name</label><br>
+                <input type="text" placeholder="Enter your last name" id="lname_input" class="input-style" name="lname" required>
+            </div><br>
+             <div>
+                 <label for="dbirth_input">Date of birth</label><br>
+                 <input type="date" placeholder="Enter your date of birth" id="dbirth_input" class="input-style" name="dbirth" required>
+             </div><br>
+             <div>
+                 <label for="age_input">Age</label><br>
+                 <input type="number" min="10" max="100" id="age_input" class="input-style" name="age">
+             </div><br>
+             <div>
+                 <p>Gender</p>
+                 <input type="radio" id="male" name="gender">
+                 <label for="male">Male</label>
+                 <input type="radio" id="female" name="gender">
+                 <label for="female">Female</label>
+                 <input type="radio" id="other" name="gender">
+                 <label for="other">Other</label>
+             </div><br>
+             <div>
+                 <label for="email_input">Email</label><br>
+                 <input type="email" placeholder="Enter your email address" id="email_input" class="input-style" name="email" required>
+             </div><br>
+             <div>
+                 <label for="tel_input">Phone number</label><br>
+                 <input type="tel" placeholder="Enter your phone number" id="tel_input"  class="input-style" name="tel" required>
+             </div> <br>
+             <div>
+                <p>Education Level Completed:</p>
+                 <select name="education" id="education" class="input-style" required>
+                     <option value="University">University</option>
+                     <option value="College">College</option>
+                     <option value="High School">High School</option>
+                     <option value="None">None</option>
+                 </select>
+             </div><br>
+               <div>
+                <p>Which option best describes your current situation?</p>
+                 <select name="situation" id="situation_input" class="input-style" required>
+                     <option value="Student">Student</option>
+                     <option value="Part time">Part time</option>
+                     <option value="Full time">Full time</option>
+                     <option value="Other">Other</option>
+                 </select>
+             </div><br>
+             <div>
+                <p>Select your skills:</p>
+                <input type="checkbox" id="Front-end" name="skill1">
+                <label for="Front-end">Front-end</label><br>
+                <input type="checkbox" id="Back-end" name="skill2">
+                <label for="Back-end">Back-end</label><br>
+                <input type="checkbox" id="Product-design" name="skill3">
+                <label for="Product-design">Product design</label><br>
+                <input type="checkbox" id="Product-manage" name="skill5">
+                <label for="Product-manag">Product management</label><br>
+                <input type="checkbox" id="other-skill" name="skill6">
+                <label for="other-skill">Other skills</label>
+                <input type="text" placeholder="Enter other skills" class="input-style" name="skill7">
+             </div> <br>
+             <label for="add-info">Explain why are you suitable for this job</label><br>
+             <textarea name="explain" id="add-info" cols="60" rows="5"></textarea><br><br>
+             <label for="cv-file">Upload your resume:</label>
+             <input type="file" id="cv-file" name="cv"><br><br>
+             <input type="submit" value="send" class="button" formtarget="_blank">
+               <br>
+           </form>
+       </div>
+    </div>
+</body>
